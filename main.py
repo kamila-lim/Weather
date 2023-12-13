@@ -12,7 +12,7 @@ def print_weather_info(location: str, data_from_file: dict):
 
     tz = timezone(timedelta(seconds=offset))
     result_time = datetime.fromtimestamp(utc_timestamp, tz)
-    formatted_time = result_time.strftime("%Y-%m-%d %H:%M:%S%z")  
+    formatted_time = result_time.strftime("%Y-%m-%d %H:%M:%S")  
 
     print("текущее время:", formatted_time)
     print("название города:", location)
